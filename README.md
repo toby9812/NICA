@@ -1,19 +1,14 @@
 # NICA NHO-0609
-撞擊檢知範例
-COLDET 1, 1, 7 '啟動干涉力檢測(當檢測到外力時停止動作並跳至第7行執行)
-FORKMCR 4,10000	'啟動用戶任務4
-MOVEX A=1,AC=0,SM=0,M1X,L,P5,R=V31%,H=1,MS	'P5
-INH
-LETVI V18%,5
-RINT I216,0,0,0,0
-MOVEX A=1,AC=0,SM=0,M1X,L,P15,R=V31%,H=1,MS	'P15
-INH
-LETVI V18%,15
-IF I216=1
-GETP V90!
-MOVEX A=1,AC=0,SM=0,M1X,L,(V90!,V91!,V92!,V93!,V94!,V95!),S= 150.0,H=1,MS
-SETM O218,1
-GOTO *END
-ENDIF
-LETVI V37%,0 '結束用戶任務4
-COLDET 0, 1, 10000 '關閉干涉力檢測
+![image](https://github.com/toby9812/NICA-NHO0609-NACHI/assets/161737346/c5039350-bd83-4e34-9111-43c78513ed3b)
+![image](https://github.com/toby9812/NICA-NHO0609-NACHI/assets/161737346/80ae12d4-fc55-44a1-85ae-6068b177168c)
+![image](https://github.com/toby9812/NICA-NHO0609-NACHI/assets/161737346/f918f73d-e60f-43d6-a547-6632cfb849ad)
+![image](https://github.com/toby9812/NICA-NHO0609-NACHI/assets/161737346/76b80b60-000b-42ff-92e2-d752c9a16347)
+![image](https://github.com/toby9812/NICA-NHO0609-NACHI/assets/161737346/dc7de980-53a8-49b8-9c5a-13dfc76d7076)
+![image](https://github.com/toby9812/NICA-NHO0609-NACHI/assets/161737346/f8a028d8-9f2d-4561-87b7-bda8a47a7720)
+![image](https://github.com/toby9812/NICA-NHO0609-NACHI/assets/161737346/f614ecf9-27ab-430d-a333-f58795593285)
+![image](https://github.com/toby9812/NICA-NHO0609-NACHI/assets/161737346/63f7f02e-a0a8-419f-bc25-6c1c8e359ad1)
+![image](https://github.com/toby9812/NICA-NHO0609-NACHI/assets/161737346/edfe8901-de9b-47e5-aa5a-ed1bb4cbff04)
+![image](https://github.com/toby9812/NICA-NHO0609-NACHI/assets/161737346/678c8bd9-6f1f-4b91-ae30-13dafa50507a)
+![image](https://github.com/toby9812/NICA-NHO0609-NACHI/assets/161737346/fa8f20ed-33a5-4191-9815-d3ed9149f2da)
+![image](https://github.com/toby9812/NICA-NHO0609-NACHI/assets/161737346/5dc07452-ee97-4839-8184-5f3835226c6a)
+![image](https://github.com/toby9812/NICA-NHO0609-NACHI/assets/161737346/4d787507-8f6d-42b1-8242-e3f71830e13f)
